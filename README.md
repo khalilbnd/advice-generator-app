@@ -1,6 +1,6 @@
 # Frontend Mentor - Advice generator app
 
-![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)
+![image](https://user-images.githubusercontent.com/64180671/157912668-4048571a-4607-4b1b-9008-30c36f909619.png)
 
 ## Welcome! 👋
 
@@ -75,4 +75,6 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+Live Site :
+["Github Pages"](https://khalil227.github.io/advice-app-generator)
 
