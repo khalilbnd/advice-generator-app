@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+body{
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 645px;
+}
+.advice{
+  background-color: hsl(217, 19%, 24%);
+  width: 40vw;
+  height: 50vh;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+ 
+}
+.advice-title{
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 0.9em;
+  color: hsl(150, 100%, 66%);
+  position: relative;
+  top: 20px;
+}
+.advice-content{
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3em;
+  width: 25vw;
+  text-align: center;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  position: relative;
+  top: 20px;
+}
+.dice-advice{
+  position: relative;
+  top: 60px;
+  padding: 13px;
+  border-radius: 100px;
+  background-color: hsl(150, 100%, 66%);
+  transition: all .2s;
+}
+.advice-hr{
+  content: url("../public/pattern-divider-desktop.svg");
+  object-fit: contain;
+  position: relative;
+  top: 20px;
+}
+.dice-advice:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%), 0 0 60px hsl(150, 100%, 66%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (min-width: 375px) and (max-width: 1200px){
+  .advice{
+    width: 80vw;
+    height: 40vh;
+  }
+  .advice-title{
+    font-size: 0.6em;
+  }
+  .advice-content{
+    font-size: 1.3em;
+    width: 60vw;
+  }
+  .advice-hr{
+    content: url("../public/pattern-divider-mobile.svg");
+  }
+  .dice-advice{
+    top: 60px;
+  }
 }
