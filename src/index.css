@@ -5,6 +5,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 645px;
+  flex-direction: column;
 }
 .advice{
   background-color: hsl(217, 19%, 24%);
@@ -53,7 +54,18 @@ body{
   transform: scale(1.2);
   box-shadow: 0 0 10px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%), 0 0 60px hsl(150, 100%, 66%);
 }
-
+p{
+  padding-top: 30px;
+  font-family: 'Manrope', sans-serif;
+  color: hsl(193, 38%, 86%);
+}
+p a:link{
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+}
+p a:visited{
+  color: hsl(150, 100%, 66%);
+} 
 @media only screen and (min-width: 375px) and (max-width: 1200px){
   .advice{
     width: 80vw;
@@ -71,5 +83,8 @@ body{
   }
   .dice-advice{
     top: 60px;
+  }
+  p{
+    font-size: 0.7em;
   }
 }

@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 
 
 export default function Advice(){
-    
-
     const [adviceID, setAdviceID] = useState()
     const [adviceContent, setAdviceContent] = useState()
     useEffect (() => {
@@ -14,10 +12,7 @@ export default function Advice(){
              setAdviceID(data.slip.id);
              setAdviceContent(data.slip.advice)
            });
-           
-       
        }, []);
-    
       function newAdvice(){
         fetch( `https://api.adviceslip.com/advice`)
         .then(res => res.json())
